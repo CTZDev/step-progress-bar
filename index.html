@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step Progress Bar</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Step Progress Bar</h1>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon step-icon-ok">
+            <img src="./assets/check.svg" alt="Step Success" width="36" height="36" />
+          </div>
+          <span class="step-text">Start</span>
+        </div>
+        <div class="step">
+          <div class="step-icon step-icon-error">
+            <img src="./assets/not_charge.svg" alt="Step not charge" width="36" height="36" />
+          </div>
+          <span class="step-text step-text-error">Step 1</span>
+        </div>
+        <div class="step">
+          <div class="step-icon step-icon-error">
+            <img src="./assets/not_charge.svg" alt="Step not charge" width="36" height="36" />
+          </div>
+          <span class="step-text step-text-error">Step 2</span>
+        </div>
+        <div class="step">
+          <div class="step-icon step-icon-error">
+            <img src="./assets/not_charge.svg" alt="Step not charge" width="36" height="36" />
+          </div>
+          <span class="step-text step-text-error">Step 3</span>
+        </div>
+        <div class="step">
+          <div class="step-icon step-icon-error">
+            <img src="./assets/not_charge.svg" alt="Step not charge" width="36" height="36" />
+          </div>
+          <span class="step-text step-text-error">Final</span>
+        </div>
+      </div>
+      <div class="directions">
+        <button type="button" id="back" class="direction">
+          <img src="./assets/arrow-left.svg" alt="Back" width="36" height="36" />
+        </button>
+        <button type="button" id="forward" class="direction">
+          <img src="./assets/arrow-right.svg" alt="Forward" width="36" height="36" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
