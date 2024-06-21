@@ -56,16 +56,38 @@
 
 .step-icon-ok {
   border: 4px solid rgb(16, 163, 16);
+  transition: all 350ms ease-in-out;
 
   &::after {
     border: 2px solid rgb(184, 184, 184);
+  }
+
+  & img {
+    transition: all 350ms ease-in-out;
+    filter: invert(42%) sepia(83%) saturate(405%) hue-rotate(76deg) brightness(100%) contrast(100%);
+  }
+
+  &.active::after {
+    transition: all 350ms ease-in-out;
+    border: 2px solid rgb(16, 163, 16);
   }
 }
 
 .step-icon-error {
   border: 4px solid rgb(184, 184, 184);
+  transition: all 350ms ease-in-out;
 
   &::after {
+    border: 2px solid rgb(184, 184, 184);
+  }
+
+  & img {
+    transition: all 300ms ease-in-out;
+    filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(50%);
+  }
+
+  &.active::after {
+    transition: all 350ms ease-in-out;
     border: 2px solid rgb(184, 184, 184);
   }
 }
@@ -80,17 +102,23 @@
 .step-text-error {
   opacity: 0;
   visibility: hidden;
+  transition: all 400ms ease-in-out;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 /* Directions */
-.directions {
+.directions-buttons {
   display: flex;
   justify-content: center;
   gap: 2rem;
   font-size: 3.5rem;
 }
 
-.direction {
+.direction-button {
   border: 0;
   padding: 0.7rem 1.5rem;
   border-radius: 1rem;
