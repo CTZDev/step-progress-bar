@@ -134,4 +134,8 @@
   &:hover {
     transform: scale(1.035);
   }
+
+  &[disabled] {
+    background-color: rgb(184, 184, 184);
+  }
 }
